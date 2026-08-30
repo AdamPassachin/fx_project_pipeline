@@ -3,7 +3,7 @@ import pandas as pd
 from io import StringIO
 import duckdb
 
-ECB_url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.NOK+SEK+PLN+RON+DKK+CZK.EUR.SP00.A?startPeriod=2024-01-01&format=csvdata&detail=dataonly'
+ECB_url = 'https://data-api.ecb.europa.eu/service/data/EXR/D.NOK+SEK+PLN+RON+DKK+CZK.EUR.SP00.A?startPeriod=2018-01-01&format=csvdata&detail=dataonly'
 DATABASE_PATH = "data/fx_rates.duckdb"
 
 def fetch_ecb_rates():
