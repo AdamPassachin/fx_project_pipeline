@@ -11,6 +11,7 @@ def fetch_ecb_rates():
     response.raise_for_status()
 
     raw_rates_df = pd.read_csv(StringIO(response.text))
+    raw_rates_df = raw_rates_df["CURRENCY", "TIME_PERIOD", "OBS_VALUE"]
 
     return raw_rates_df
 
