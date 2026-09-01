@@ -153,7 +153,6 @@ A valid load returns no rows from the second query.
 ```text
 pipeline.py       Fetches, transforms, and loads the rates
 queries.sql       Example and validation queries
-DESIGN.md         Design decisions and trade-offs
 requirements.txt  Python dependencies
 data/             Generated DuckDB database
 ```
